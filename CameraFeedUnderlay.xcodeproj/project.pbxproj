@@ -15,6 +15,8 @@
 		360F9CDD14E961210067EBA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 360F9CDC14E961210067EBA0 /* AppDelegate.m */; };
 		360F9CE014E961210067EBA0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 360F9CDF14E961210067EBA0 /* ViewController.m */; };
 		360F9CE314E961210067EBA0 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 360F9CE114E961210067EBA0 /* ViewController.xib */; };
+		360F9CEC14E961490067EBA0 /* CameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 360F9CEB14E961490067EBA0 /* CameraView.m */; };
+		360F9CEE14E961D70067EBA0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360F9CED14E961D70067EBA0 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +24,18 @@
 		360F9CCC14E961210067EBA0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		360F9CCE14E961210067EBA0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		360F9CD014E961210067EBA0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		360F9CD414E961210067EBA0 /* CameraFeedUnderlay-Info.plist */ = {isa = PBXFileReference; path = "CameraFeedUnderlay-Info.plist"; sourceTree = "<group>"; };
+		360F9CD414E961210067EBA0 /* CameraFeedUnderlay-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CameraFeedUnderlay-Info.plist"; sourceTree = "<group>"; };
 		360F9CD614E961210067EBA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		360F9CD814E961210067EBA0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		360F9CDA14E961210067EBA0 /* CameraFeedUnderlay-Prefix.pch */ = {isa = PBXFileReference; path = "CameraFeedUnderlay-Prefix.pch"; sourceTree = "<group>"; };
-		360F9CDB14E961210067EBA0 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		360F9CDA14E961210067EBA0 /* CameraFeedUnderlay-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CameraFeedUnderlay-Prefix.pch"; sourceTree = "<group>"; };
+		360F9CDB14E961210067EBA0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		360F9CDC14E961210067EBA0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		360F9CDE14E961210067EBA0 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		360F9CDE14E961210067EBA0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		360F9CDF14E961210067EBA0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		360F9CE214E961210067EBA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		360F9CEA14E961490067EBA0 /* CameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraView.h; sourceTree = "<group>"; };
+		360F9CEB14E961490067EBA0 /* CameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraView.m; sourceTree = "<group>"; };
+		360F9CED14E961D70067EBA0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				360F9CEE14E961D70067EBA0 /* AVFoundation.framework in Frameworks */,
 				360F9CCD14E961210067EBA0 /* UIKit.framework in Frameworks */,
 				360F9CCF14E961210067EBA0 /* Foundation.framework in Frameworks */,
 				360F9CD114E961210067EBA0 /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +56,7 @@
 		360F9CBD14E961210067EBA0 = {
 			isa = PBXGroup;
 			children = (
+				360F9CED14E961D70067EBA0 /* AVFoundation.framework */,
 				360F9CD214E961210067EBA0 /* CameraFeedUnderlay */,
 				360F9CCB14E961210067EBA0 /* Frameworks */,
 				360F9CC914E961210067EBA0 /* Products */,
@@ -77,6 +84,7 @@
 		360F9CD214E961210067EBA0 /* CameraFeedUnderlay */ = {
 			isa = PBXGroup;
 			children = (
+				360F9CE914E961390067EBA0 /* Camera View */,
 				360F9CDB14E961210067EBA0 /* AppDelegate.h */,
 				360F9CDC14E961210067EBA0 /* AppDelegate.m */,
 				360F9CDE14E961210067EBA0 /* ViewController.h */,
@@ -96,6 +104,15 @@
 				360F9CDA14E961210067EBA0 /* CameraFeedUnderlay-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		360F9CE914E961390067EBA0 /* Camera View */ = {
+			isa = PBXGroup;
+			children = (
+				360F9CEA14E961490067EBA0 /* CameraView.h */,
+				360F9CEB14E961490067EBA0 /* CameraView.m */,
+			);
+			name = "Camera View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +181,7 @@
 				360F9CD914E961210067EBA0 /* main.m in Sources */,
 				360F9CDD14E961210067EBA0 /* AppDelegate.m in Sources */,
 				360F9CE014E961210067EBA0 /* ViewController.m in Sources */,
+				360F9CEC14E961490067EBA0 /* CameraView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
